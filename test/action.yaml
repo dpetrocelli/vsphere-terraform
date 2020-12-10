@@ -1,0 +1,22 @@
+name: Vmware Terraform On Prem Integration 
+description: How to run terraform for automate vmware vms
+author: David Petrocelli
+
+inputs:
+  username:
+    description: " Vmware administrator username"
+    required: true
+  password:
+    description: "secured password"
+    required: true
+  vcenterhost:
+    description: "Vmware Vcenter Host "
+    required: true
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
+branding:
+  icon: "activity"
+  color: "orange"
