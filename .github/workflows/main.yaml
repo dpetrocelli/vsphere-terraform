@@ -10,6 +10,6 @@ jobs:
       - uses: actions/checkout@v2
       - uses: ./test
         with:
-          username: "david"
-          password: "pass"
-          vcenterhost: "vcenterhost" 
+          USERNAME: "david"
+          PASSWORD: "pass"
+          VCENTERHOST: "vcenterhost" 
