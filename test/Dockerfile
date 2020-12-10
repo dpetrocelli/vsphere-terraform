@@ -1,7 +1,6 @@
 FROM debian:10.6-slim
-LABEL maintainer="Gisela Torres"
-ADD entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
+LABEL maintainer="David Petrocelli"
+
 
 RUN apt-get update && apt-get install -y \
     wget \
@@ -13,5 +12,6 @@ RUN wget --quiet https://releases.hashicorp.com/terraform/0.14.2/terraform_0.14.
   && mv terraform /usr/bin \
   && rm terraform_0.14.2_linux_amd64.zip
 
-
+ADD entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
