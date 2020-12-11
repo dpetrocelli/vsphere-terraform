@@ -1,8 +1,11 @@
 FROM debian:10.6-slim
 LABEL maintainer="David Petrocelli"
 
-RUN export http_proxy="http://192.168.1.231:80"
-RUN export https_proxy="http://192.168.1.231:80"
+ENV https_proxy=http://192.168.1.231:80
+ENV http_proxy=http://192.168.1.231:80
+ENV HTTP_PROXY=http://192.168.1.231:80
+ENV HTTPS_PROXY=http://192.168.1.231:80
+
 RUN apt-get update && apt-get install -y \
     wget \
     unzip \
