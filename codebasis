@@ -1,0 +1,35 @@
+Acciones realizadas:
+
+** REPO:
+Generar un repositorio GIT con todas las investigaciones y pruebas realizadas. El objetivo es integrar todos los conceptos, inclusive los pasos de un CI/CD.
+
+Para eso se generó el repo en GITHUB, en el siguiente link: https://github.com/dpetrocelli/vsphere-terraform
+
+Se va a trabajar en dos branches básicas:
+** Branch dev -> todos los avances y pruebas intermedias
+** Branch master -> donde se vuelca el código final.
+
+Cuando se hace el merge al branch master se "activan" los procesos automáticos del CI/CD -> hasta ahora el volcado de la infra como código.
+
+** TERRAFORM
+Templates de Vmware "listos":
+* Se tomó el template de Windows 2019 existente
+* Se creó un template de Linux (un Centos 8) colocando todas las configuraciones de proxy necesarias para contar con:
+    - Docker behind proxy
+    - Paquetes de actualización YUM behind proxy
+    - wget behind proxy
+    - curl behind proxy
+    - antivirus
+A través de terraform (que se requiere instalar en algún lugar el "server" con solo unos paquetes simples). Valga la redundancia puede ser un Docker :D, y se deben generar 3 archivos para integrar con Vmware (o cualquier cloud provider), a lo que tiene que definirse lo siguiente:
+    - variables de configuración (variables.tf)
+    - credenciales y configuraciones (tfvars.tf)
+    - estructura de máquina virtual (main.tf)
+El proceso está sin pulir pero funciona para:
+* Clonar una VM y setearle "automáticamente" algunas configuraciones:
+    - recursos
+    - ip
+    - nombre y unirlo a dominio
+
+** KUBERNETES
+Recién retomo, porque al no funcionarme bien linux behind proxy, no podía montar los recursos necesarios. Llegué a levantar la interfaz de RANCHER y setear credenciales de VMWARE. Sin embargo, no pude crear las VMS automáticamente para que se cree el cluster (desde el template de Centos!)
+Sin pulir, pero hasta el 
