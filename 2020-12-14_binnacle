@@ -32,4 +32,6 @@ El proceso está sin pulir pero funciona para:
 
 ** KUBERNETES
 Recién retomo, porque al no funcionarme bien linux behind proxy, no podía montar los recursos necesarios. Llegué a levantar la interfaz de RANCHER y setear credenciales de VMWARE. Sin embargo, no pude crear las VMS automáticamente para que se cree el cluster (desde el template de Centos!)
-Sin pulir, pero hasta el 
+Temas a ver:
+- El tema es ver como integrar "redes" en este proceso. ¿Cómo voy a tomar un pool de IPs para estas máquinas? ¿Hay que reservarlas antes?
+- Se puede hacer todo desde la GUI? o tengo que ir por RKE?
