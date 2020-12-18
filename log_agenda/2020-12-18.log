@@ -1,0 +1,24 @@
+Consultas a Vmware Tanzú:
+- que debe conocer el sre del bcra para poder administrar correctamente
+*    tanzu
+* asociados
+- que capacitación tanto tanzu como asociados ofrece vmware
+- Manejo de Secrets
+- Cluster autoscaling -> automatiza
+- Rango de IPS 
+- Integración con CNCF (Platinum Member)
+- Containers Registry
+- AD
+- SECU API
+- Despliegues aut. (GIT)
+- Si yo ya  tengo un k8s montado como lo integro / monitoreo al panel -> rancher te deja
+- Si quiero sacarlo vmware y montarlo en otro lado ¿?
+- En las versiones mencionan algunas soluciones (xj registry HARBOR, si quiero poner otro) si tengo mi registry con mis aplicaciones
+- Contenedores Windows
+- Tipos de almacenamiento para datos:
+    - Blob Storage -> Integración con MinIO para hacer un s3 compatible
+- update de versiones (vm + version)
+- cada cuanto implementan las ultimas versiones de k8s
+- facilidad de Despliegue
+- volumenes storage en k8s
+Centralized access and security policy management Require NSX?

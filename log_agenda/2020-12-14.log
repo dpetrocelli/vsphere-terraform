@@ -35,3 +35,14 @@ Recién retomo, porque al no funcionarme bien linux behind proxy, no podía mont
 Temas a ver:
 - El tema es ver como integrar "redes" en este proceso. ¿Cómo voy a tomar un pool de IPs para estas máquinas? ¿Hay que reservarlas antes?
 - Se puede hacer todo desde la GUI? o tengo que ir por RKE?
+
+** SEMANALES
+- Migrar VM de lun para reemplazar 3par por hitachi
+- Análisis de actualizaciones
+- Informe de seguridad -> configuración de Logs.
+- Pentest - Servidor BCRAS3
+
+
+** BASICS
+Levantar punto central
+configuracion teradata ntp
